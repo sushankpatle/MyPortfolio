@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './main.css';
+import MyLogo from "./images/111.png"
 import { Link as ScrollLink } from 'react-scroll';
 
 const Navbar = () => {
@@ -13,7 +14,8 @@ const Navbar = () => {
     <>
       <div className='navbar'>
         <div className="left">
-          <h2 className='title'>Portfolio</h2>
+          {/* <h2 className='title'>Portfolio</h2> */}
+          <img src={MyLogo} alt="" className='title' />
         </div>
         <div className="menu-toggle" onClick={toggleMenu}>
           &#9776;

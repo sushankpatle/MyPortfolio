@@ -4,6 +4,7 @@ import github from "./images/github.png";
 import linked_in from "./images/linked_in.png";
 import { motion } from "framer-motion";
 // import leetcodes from "./images/leetcodes.png";
+import MyProfile from "./images/myprofile.jpeg"
 
 const Main = () => {
   return (
@@ -76,11 +77,13 @@ const Main = () => {
         </div>
       </div>
       <div className="right_main">
-        <img
+        {/* <img
           className="behind_the_image"
           src="data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3ClinearGradient id=%22b%22 gradientTransform=%22rotate(-45 .5 .5)%22%3E%3Cstop offset=%220%25%22 stop-color=%22%2300cefc%22%2F%3E%3Cstop offset=%22100%25%22 stop-color=%22%233c1d4b%22%2F%3E%3C%2FlinearGradient%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M921 673.5q-74 173.5-247.5 191t-347 0Q153 847 86.5 673.5T130 370q110-130 240-234.5t281-21Q802 198 898.5 349T921 673.5Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22url(%23b)%22 d=%22M921 673.5q-74 173.5-247.5 191t-347 0Q153 847 86.5 673.5T130 370q110-130 240-234.5t281-21Q802 198 898.5 349T921 673.5Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E"
           alt=""
-        ></img>
+        ></img> */}
+
+        <img className="behind_the_image" src={MyProfile} alt="" />
       </div>
     </motion.div>
   );

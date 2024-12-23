@@ -21,10 +21,16 @@
   justify-content: left;
 }
 
+.title{
+  width: 10rem;
+}
+
 .right {
-  flex: 2; /* Adjust flex for responsiveness */
+  flex: 1; /* Adjust flex for responsiveness */
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  gap: 30px;
+  /* justify-content: space-between; */
 }
 
 .button {
@@ -102,6 +108,17 @@ body {
 }
 
 /* Responsive CSS */
+
+@media (max-width: 1024px) {
+  .right {
+    flex: 1; /* Adjust flex for responsiveness */
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    /* justify-content: space-between; */
+  }
+}
+
 @media (max-width: 768px) {
   .navbar {
     height: auto;

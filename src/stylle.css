@@ -253,9 +253,29 @@
     
   }
   
-  @media screen and (max-width: 410px) {
+  @media screen and (max-width: 440px) {
     .send-button {
       width: 99%;
+    }
+
+    .form-horizontal {
+      /*float: left;*/
+      max-width: 300px;
+      font-family: 'Lato';
+      font-weight: 400;
+      margin-left: 30px;
+    }
+
+    .form-control,
+    .form-control1, 
+    .textarea {
+      width: 200px;
+      color: #fff;
+      background-color: transparent;
+      border:1px solid #03B0FD;
+      margin:5px 0px;
+      letter-spacing: 1px;
+      padding: 10px;
     }
   }
 
