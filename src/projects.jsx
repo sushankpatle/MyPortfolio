@@ -2,8 +2,7 @@ import React from "react";
 import Card from "./Card";
 import Resume from "./images/Img11.png";
 import ToDo from "./images/Img2.jpg";
-import snake from "./images/snake.jpg";
-import wise_way from "./images/wise_way.jpg";
+import Psycortex from "./images/Img3.png";
 import { motion } from "framer-motion";
 
 const Projects = () => {
@@ -27,7 +26,7 @@ const Projects = () => {
       explore: "",
     },
     {
-      imageUrl: snake,
+      imageUrl: Psycortex,
       altText: "Canyons",
       title: "Appointment Management System",
       description:

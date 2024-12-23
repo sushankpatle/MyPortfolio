@@ -33,7 +33,6 @@ function App() {
       </div>
     ) :(
     <div className="App">
-      
       <Navbar/>
       <Main id="mainy" />
       <AboutMe id="aboutMey" />
