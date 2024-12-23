@@ -3,7 +3,6 @@ import Card from "./Card";
 import Resume from "./images/Img11.png";
 import ToDo from "./images/Img2.jpg";
 import Psycortex from "./images/Img3.png";
-import wise_way from "./images/wise_way.jpg";
 import { motion } from "framer-motion";
 
 const Projects = () => {
