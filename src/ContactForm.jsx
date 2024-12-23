@@ -31,7 +31,7 @@ const ContactForm = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:3033/api/send",
+        "https://myportfolio-backend-jtvt.onrender.com/api/send",
         formData
       ); // Adjust URL if needed
       alert(response.data);
