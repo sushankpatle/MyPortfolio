@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useRef } from "react";
-import "./main.css";
+import React, { useState, useEffect, useRef } from 'react';
+import './main.css';
 import MyLogo from "./images/111.png";
-import { Link as ScrollLink } from "react-scroll";
+import { Link as ScrollLink } from 'react-scroll';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,35 +15,35 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
 
-  const handleClickOutside = (event) => {
-    if (menuRef.current && !menuRef.current.contains(event.target)) {
-      closeMenu();
-    }
-  };
-
   useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        closeMenu();
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
 
   return (
-    <div className="navbar" ref={menuRef}>
+    <div className='navbar' ref={menuRef}>
       <div className="left">
-        <img src={MyLogo} alt="Logo" className="title" />
+        <img src={MyLogo} alt="Logo" className='title' />
       </div>
       <div className="menu-toggle" onClick={toggleMenu}>
         &#9776;
       </div>
-      <div className={`right ${isMenuOpen ? "active" : ""}`}>
+      <div className={`right ${isMenuOpen ? 'active' : ''}`}>
         <ScrollLink
           to="mainy"
           spy={true}
           smooth={true}
           offset={-140}
           duration={600}
-          className="button"
+          className='button'
           onClick={closeMenu}
         >
           Home
@@ -54,7 +54,7 @@ const Navbar = () => {
           smooth={true}
           offset={-140}
           duration={600}
-          className="button"
+          className='button'
           onClick={closeMenu}
         >
           About Me
@@ -65,7 +65,7 @@ const Navbar = () => {
           smooth={true}
           offset={-140}
           duration={600}
-          className="button"
+          className='button'
           onClick={closeMenu}
         >
           Skills
@@ -76,7 +76,7 @@ const Navbar = () => {
           smooth={true}
           offset={-140}
           duration={600}
-          className="button"
+          className='button'
           onClick={closeMenu}
         >
           Projects
@@ -87,7 +87,7 @@ const Navbar = () => {
           smooth={true}
           offset={-140}
           duration={600}
-          className="button"
+          className='button'
           onClick={closeMenu}
         >
           Contact Me
