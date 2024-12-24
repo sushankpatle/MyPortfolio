@@ -1,13 +1,13 @@
-.heading2{
-    color:rgba(255, 255, 255, 0.6);
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 25px;
-    margin-bottom: 2%;
+.heading1{
+    color:rgb(255, 255, 255);
+    /* font-family: "Poppins", sans-serif; */
+    /* font-weight: 400; */
+    font-size: 4rem;
+    /* margin-bottom: 2%; */
+    margin: 0px;
 }
 .skills{
-    margin-top: 10%;
-    
+    margin-top: 1%;   
 }
 .flex2{
     display: flex;

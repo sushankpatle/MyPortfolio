@@ -16,6 +16,8 @@ import BackToTopButton from "./BackToTopButton";
 import "./stylle.css";
 
 const ContactForm = () => {
+  const [isLoading, setIsLoading] = useState(false);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -29,6 +31,7 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsLoading(true);
     try {
       const response = await axios.post(
         "https://myportfolio-backend-jtvt.onrender.com/api/send",
@@ -39,7 +42,7 @@ const ContactForm = () => {
       console.error("Error sending email:", error);
       alert("Error sending email");
     }
-
+    setIsLoading(false);
     setFormData({
       name: "",
       email: "",
@@ -145,14 +148,21 @@ const ContactForm = () => {
             required
           ></textarea>
           <button
-            className="btn btn-primary send-button"
+            className={`btn btn-primary send-button ${
+              isLoading ? "loading" : ""
+            }`}
             id="submit"
             type="submit"
-            value="SEND"
+            disabled={isLoading}
           >
             <div className="alt-send-button">
-              <FontAwesomeIcon icon={faPaperPlane} className="fa" />
-              <span className="send-text">SEND</span>
+              <FontAwesomeIcon
+                icon={faPaperPlane}
+                className={`fa${isLoading ? "spin" : ""}`}
+              />
+              <span className="send-text">
+                {isLoading ? "WAIT... SENDING MESSAGE..." : "SEND"}
+              </span>
             </div>
           </button>
         </form>

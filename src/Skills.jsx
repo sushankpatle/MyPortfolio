@@ -13,8 +13,7 @@ const Skills = () => {
       viewport={{ margin: "-100px", once: true }}
       className='skills'
     >
-      <h2 className='heading1 '>Projects</h2>
-      <h3 className='heading2'>Languages</h3>
+      <h2 className='heading1 '>Languages</h2>
       <div className="contents">
         <div className="flex">
           <SemiDonutChart percentage={80} fill="#03B0FD" txt="HTML"/>
@@ -38,7 +37,7 @@ const Skills = () => {
         transition={{ delay: 0.2, duration: 0.5 }}
         viewport={{ margin: "-100px", once: true }}
       >
-        <h3 className='heading3'>Libraries</h3>
+        <h3 className='heading1'>Libraries</h3>
         <div className="contents">
           <div className="flex">
             <SemiDonutChart percentage={80} fill="#03B0FD" txt="HTML"/>

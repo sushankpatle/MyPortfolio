@@ -1,141 +1,107 @@
-/* Existing CSS */
+body{
+  background-color:  #151925;
+}
+
 .navbar {
-  position: fixed;
-  /* position: relative; */
-  top: 0;
-  left: 0;
-  z-index: 1000;
   display: flex;
-  justify-content: space-between; /* Change to space-between for better alignment */
+  justify-content: space-between;
   align-items: center;
+  padding: 0rem 2rem;
+  position: fixed;
   width: 100%;
-  height: 100px;
-  background-color: #151925;
-  transition: top 0.3s;
-  padding: 0 20px; /* Add padding for spacing */
+  top: 0;
+  background:  #151925;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+  width: 100%;
 }
 
-.left {
-  flex: 1; /* Adjust flex for responsiveness */
-  display: flex;
-  justify-content: left;
+.left{
+  width: 40%;
+  text-align: start;
 }
 
-.title{
-  width: 10rem;
+.left .title {
+  width: 120px;
+  height: auto;
+  margin: 0;
 }
 
 .right {
-  flex: 1; /* Adjust flex for responsiveness */
   display: flex;
-  flex-direction: row;
-  gap: 30px;
-  /* justify-content: space-between; */
+  gap: 5rem;
+  align-items: center;
+  padding-right: 0rem;
+  width: 80%;
 }
 
 .button {
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  background-color: transparent;
-  border-color: transparent;
-  width: 120px;
-  height: 30px;
-  font-size: 18px;
-  color: #03B0FD;
-  cursor: pointer;
-  position: relative;
-  border: none;
-  transition: color 400ms cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-.button:focus,
-.button:hover {
-  color: #fff;
-}
-
-.button:focus:after,
-.button:hover:after {
-  width: 100%;
-  left: 0%;
-}
-
-.button:after {
-  content: "";
-  pointer-events: none;
-  bottom: -2px;
-  left: 50%;
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background-color: #fff;
-  transition: width 400ms cubic-bezier(0.25, 0.8, 0.25, 1), left 400ms cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-body {
-  background-color: #151925;
-}
-
-.title {
+  text-decoration: none;
   color: white;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s;
 }
 
-.typewriter {
-  --caret: #03B0FD;
-}
-
-.typewriter::before {
-  content: "";
-  animation: typing 13.5s infinite;
-}
-
-.typewriter::after {
-  content: "";
-  border-right: 1px solid var(--caret);
-  animation: blink 0.5s linear infinite;
+.button:hover {
+  color: #007bff;
 }
 
 .menu-toggle {
   display: none;
-  font-size: 30px;
-  color: #03B0FD;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
 }
 
-@keyframes blink {
-  from, to { border-color: transparent }
-  50% { border-color: var(--caret) }
-}
-
-/* Responsive CSS */
-
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
   .right {
-    flex: 1; /* Adjust flex for responsiveness */
     display: flex;
-    flex-direction: row;
-    gap: 0px;
-    /* justify-content: space-between; */
+    gap: 3.5rem;
+    align-items: center;
+    padding-right: 0rem;
+    width: 80%;
   }
 }
 
 @media (max-width: 768px) {
-  .navbar {
-    height: auto;
-    padding: 10px 20px;
-  }
-  .right {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-  }
-  .right.active {
-    display: flex;
-  }
   .menu-toggle {
     display: block;
-    color: white;
-    cursor: pointer;
+  }
+
+  .right {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    /* background: white; */
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .right.active {
+    display: flex;
+    width: 100%;
+    background-color: #151925;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .left .title {
+    width: 100px;
   }
 }
