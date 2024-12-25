@@ -1,7 +1,7 @@
 import React from 'react';
 import './skills.css';
 import './new.css';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap, FaNodeJs, FaDatabase, FaCloud } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap, FaNodeJs, FaCloud } from 'react-icons/fa';
 import { SiExpress, SiMysql, SiMongodb, SiCssmodules } from 'react-icons/si';
 
 const Skills = () => {
