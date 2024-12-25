@@ -6,6 +6,7 @@
   text-align: left;
   margin: 10px 0;
 }
+
 .names {
   color: #03b0fd;
   font-family: "Inder", sans-serif;
@@ -139,6 +140,68 @@
   margin-top: 3rem;
   margin-left: 100px;
   border-radius: 50%;
+}
+
+@keyframes typing {
+  /* Software Developer */
+  0%, 27.3488% { content: ""; }
+  1.667%, 48.2093% { content: "S"; }
+  3.334%, 46.0698% { content: "So"; }
+  5.001%, 44.9302% { content: "Sof"; }
+  6.668%, 42.7907% { content: "Soft "; }
+  8.335%, 40.6512% { content: "Softw"; }
+  11.669%, 38.5116% { content: "Softwa"; }
+  13.336%, 36.3721% { content: "Softwar"; }
+  15.003%, 34.2326% { content: "Software"; }
+  16.670%, 32.0930% { content: "Software D"; }
+  19.3953%, 31.9535% { content: "Software De"; }
+  21.5349%, 29.8140% { content: "Software Dev"; }
+  23.6744%, 28.6744% { content: "Software Deve"; }
+  25.8140%, 26.5349% { content: "Software Devel"; }
+  27.8140%, 27.5349% { content: "Software Develo"; }
+  29.8140%, 28.5349% { content: "Software Develop"; }
+  30.8140%, 29.5349% { content: "Software Develope"; }
+  32.8140%, 27.5349% { content: "Software Developer"; }
+
+  /* UI/UX Developer */
+  50.4186%, 99.9302% { content: ""; }
+  52.5581%, 98.7907% { content: "U"; }
+  54.6977%, 97.6512% { content: "UI"; }
+  56.8372%, 96.5116% { content: "UI/"; }
+  58.9767%, 95.3721% { content: "UI/U"; }
+  60.1163%, 94.2326% { content: "UI/UX"; }
+  62.2558%, 93.0930% { content: "UI/UX "; }
+  64.3953%, 92.9535% { content: "UI/UX D"; }
+  66.5349%, 91.2345% { content: "UI/UX De"; }
+  68.6744%, 90.8140% { content: "UI/UX Dev"; }
+  70.8140%, 89.4943% { content: "UI/UX Deve"; }
+  72.9535%, 88.6744% { content: "UI/UX Devel"; }
+  74.0930%, 86.5349% { content: "UI/UX Develo"; }
+  76.2326%, 84.3953% { content: "UI/UX Develop"; }
+  78.3721%, 82.2558% { content: "UI/UX Develope"; }
+  80.5116%, 80.1163% { content: "UI/UX Developer"; }
+}
+
+.typewriter {
+  /* color: rgb(246, 255, 0) */
+  color: rgb(255, 157, 0);
+  font-weight: bold;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: var(--caret) }
 }
 
 @media (max-width: 1200px) {

@@ -26,7 +26,7 @@ const Main = () => {
         <h3 className="it_is_me">Hey! It's Me</h3>
         <h2 className="names">Sushank Patle</h2>
         <p className="i_am_a">
-          I am a <span class="typewriter"></span>
+          I am a <span className="typewriter" data-text-1="Software Developer" data-text-2="UI/UX Developer" data-text-3="Deployment Developer"></span>
         </p>
 
         <div className="flex1">

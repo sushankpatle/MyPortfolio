@@ -19,9 +19,9 @@ const Projects = () => {
     {
       imageUrl: ToDo,
       altText: "ToDo",
-      title: "ToDo Web Application",
+      title: "Task Management System",
       description:
-        '"Stay organized and boost your productivity with our intuitive ToDo web app. Easily create, manage, and prioritize your tasks with a user-friendly interface designed to help you achieve your goals. Stay on top of your schedule and accomplish more every day with our powerful task management tool."',
+        '"Our Task Management System helps you stay organized and boost productivity with an intuitive, user-friendly interface. Easily create, manage, and prioritize tasks, set reminders, and track progress. Collaborate seamlessly and manage tasks on the go to achieve your goals efficiently."',
       // explore: "https://github.com/Praneeth2025/chess-image-recognizer",
       explore: "",
     },
