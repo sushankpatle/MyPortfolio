@@ -1,59 +1,73 @@
-import React from 'react'
-import './skills.css'
-import './new.css'
-import { motion } from 'framer-motion';
-import SemiDonutChart from './SemiDonutChart';
+import React from 'react';
+import './skills.css';
+import './new.css';
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap, FaNodeJs, FaDatabase, FaCloud } from 'react-icons/fa';
+import { SiExpress, SiMysql, SiMongodb, SiCssmodules } from 'react-icons/si';
 
 const Skills = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 40 }} 
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.2, duration: 0.5 }}
-      viewport={{ margin: "-100px", once: true }}
-      className='skills'
-    >
-      <h2 className='heading1 '>Languages</h2>
-      <div className="contents">
-        <div className="flex">
-          <SemiDonutChart percentage={80} fill="#03B0FD" txt="HTML"/>
-          <SemiDonutChart percentage={50} fill="#03B0FD" txt="CSS"/>
-          <SemiDonutChart percentage={50} fill="#03B0FD" txt="JavaScript"/>
+    <div className="SkillPage-skills-container">
+      <h1 className="SkillPage-title">Skills & Deployment</h1>
+      <div className="SkillPage-skills-grid">
+        <div className="SkillPage-skill-card">
+          <FaHtml5 className="SkillPage-skill-icon" />
+          <h3>HTML</h3>
         </div>
-        <div className="flex">
-          <SemiDonutChart percentage={70} fill="#03B0FD" txt="React JS"/>
-          <SemiDonutChart percentage={70} fill="#03B0FD" txt="C"/>
-          <SemiDonutChart percentage={65} fill="#03B0FD" txt="Python"/>
-          {/* <SemiDonutChart percentage={60} fill="#03B0FD" txt="C++"/> */}
+        <div className="SkillPage-skill-card">
+          <FaCss3Alt className="SkillPage-skill-icon" />
+          <h3>CSS</h3>
         </div>
-        <div className="flex">
-          {/* <SemiDonutChart percentage={65} fill="#03B0FD" txt="Python"/> */}
+        <div className="SkillPage-skill-card">
+          <FaJs className="SkillPage-skill-icon" />
+          <h3>JavaScript</h3>
+        </div>
+        <div className="SkillPage-skill-card">
+          <FaReact className="SkillPage-skill-icon" />
+          <h3>ReactJS</h3>
+        </div>
+        <div className="SkillPage-skill-card">
+          <FaBootstrap className="SkillPage-skill-icon" />
+          <h3>Bootstrap</h3>
+        </div>
+        <div className="SkillPage-skill-card">
+          <SiCssmodules className="SkillPage-skill-icon" />
+          <h3>Module CSS</h3>
+        </div>
+        <div className="SkillPage-skill-card">
+          <FaNodeJs className="SkillPage-skill-icon" />
+          <h3>NodeJS</h3>
+        </div>
+        <div className="SkillPage-skill-card">
+          <SiExpress className="SkillPage-skill-icon" />
+          <h3>Express JS</h3>
+        </div>
+        <div className="SkillPage-skill-card">
+          <SiMysql className="SkillPage-skill-icon" />
+          <h3>MySQL</h3>
+        </div>
+        <div className="SkillPage-skill-card">
+          <SiMongodb className="SkillPage-skill-icon" />
+          <h3>MongoDB</h3>
+        </div>
+        <div className="SkillPage-skill-card">
+          <FaCloud className="SkillPage-skill-icon" />
+          <h3>Vercel</h3>
+        </div>
+        <div className="SkillPage-skill-card">
+          <FaCloud className="SkillPage-skill-icon" />
+          <h3>Render</h3>
+        </div>
+        <div className="SkillPage-skill-card">
+          <FaCloud className="SkillPage-skill-icon" />
+          <h3>Netlify</h3>
+        </div>
+        <div className="SkillPage-skill-card">
+          <FaCloud className="SkillPage-skill-icon" />
+          <h3>Hostinger</h3>
         </div>
       </div>
-
-      <motion.div
-        initial={{ opacity: 0, y: 40 }} 
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2, duration: 0.5 }}
-        viewport={{ margin: "-100px", once: true }}
-      >
-        <h3 className='heading1'>Libraries</h3>
-        <div className="contents">
-          <div className="flex">
-            <SemiDonutChart percentage={80} fill="#03B0FD" txt="HTML"/>
-            <SemiDonutChart percentage={50} fill="#03B0FD" txt="Python"/>
-            <SemiDonutChart percentage={40} fill="#03B0FD" txt="Bootstrap"/>
-            {/* <SemiDonutChart percentage={60} fill="#03B0FD" txt="Numpy"/>
-            <SemiDonutChart percentage={50} fill="#03B0FD" txt="Pandas"/> */}
-          </div>
-          {/* <div className="flex">
-            <SemiDonutChart percentage={70} fill="#03B0FD" txt="Python"/>
-          </div> */}
-        </div>
-      </motion.div>
-    </motion.div>
+    </div>
   );
-}
+};
 
 export default Skills;
-
